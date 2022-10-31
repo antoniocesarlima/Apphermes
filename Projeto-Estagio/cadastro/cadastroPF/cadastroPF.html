@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="./cadastroPF.css">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+
+<body>
+	<h1>Cadastro de Pessoa Física</h1>
+
+	<form>
+		<select name="cadastro" id="perfis">
+			<option value="" selected>Selecione o perfil</option>
+			<option value="Aluno">Aluno</option>
+			<option value="Tutor">Tutor</option>
+			<option value="Preceptor">Preceptor</option>
+			<option value="Supervisor">Supervisor</option>
+			<option value="Responsavel">Responsavel</option>
+			<option value="Profissional">Profissional</option>
+		</select>
+
+		<p class="nome">* Nome Completo</p>
+		<input type="text" class="nome">
+		<p class="cidade">* Cidade</p>
+		<input type="text" class="cidade">
+		<p class="cpf">* CPF</p>
+		<input type="number" class="cpf">
+		<p class="endereco">* Endereço</p>
+		<input type="text" class="endereco">
+		<p class="rg">* RG</p>
+		<input type="number" class="rg">
+		<p class="uf">* UF</p>
+		<input type="text" class="uf">
+		<p class="email">* E-mail</p>
+		<input type="email" class="email">
+		<p class="cep">* CEP</p>
+		<input type="number" class="cep">
+		<p class="tCelular">* Telefone Celular</p>
+		<input type="number" class="tCelular">
+		<p class="tFixo">Telefone Fixo</p>
+		<input type="number" class="tFixo">
+		<p class="linkedin">Linkedin</p>
+		<input type="text" class="linkedin">
+		<p class="curriculo">Currículo Lattes</p>
+		<input type="text" class="curriculo">
+		<p class="senha">* Defina uma senha de login</p>
+		<input type="password" class="senha">
+
+		<p class="obs"><span>Todos os campos com * devem ser preenchidos</span></p>
+
+		<input type="submit" value="Enviar" class="envio" onclick="verificar()">
+
+	</form>
+
+	<script>
+
+		// ---!! Salvar dados caso a verficação de erro !!---
+		// ---!! Fazer verificação do select !!---
+
+		function verificar() {
+			let camposNulos = 0;
+			if(document.querySelector("input.nome").value == "") camposNulos++;
+			if(document.querySelector("input.cidade").value === "") camposNulos++;
+			if(document.querySelector("input.cpf").value === "") camposNulos++;
+			if(document.querySelector("input.endereco").value === "") camposNulos++;
+			if(document.querySelector("input.rg").value === "") camposNulos++;
+			if(document.querySelector("input.uf").value === "") camposNulos++;
+			if(document.querySelector("input.email").value === "") camposNulos++;
+			if(document.querySelector("input.cep").value === "") camposNulos++;
+			if(document.querySelector("input.tCelular").value === "") camposNulos++;
+			if(document.querySelector("input.senha").value === "") camposNulos++;
+			if(camposNulos > 0) alert("Preencha todos os campos vazios");
+		}
+	</script>
+</body>
+</html>

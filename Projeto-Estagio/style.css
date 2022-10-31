@@ -1,0 +1,200 @@
+body {
+	font-family: 'Inter';
+	position: relative;
+	width: 1349px;
+	height: 768px;
+
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+div#login_part1 {
+	position: absolute;
+	width: 552px;
+	height: 768px;
+	left: 0px;
+	top: 0px;
+
+	background: #484D6D;
+}
+ 
+#login_part1 h2{
+	position: absolute;
+	width: 296px;
+	height: 88px;
+	left: 111px;
+	top: 321px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+}
+
+#login_part1 h4{
+	position: absolute;
+	width: 220px;
+	height: 54px;
+	left: 158px;
+	top: 425px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFDADA;
+}
+
+#login_part2 h1 {
+	position: absolute;
+	width: 330px;
+	height: 64px;
+	left: 782px;
+	top: 7px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 73px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-shadow: 3px;
+
+	color: #000000;
+
+	text-shadow: 3px 2px #cb8f8f;
+}
+img#user{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 767px;
+	top: 232px;
+	z-index: 10;
+}
+
+img#key {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 767px;
+	top: 349px;
+	z-index: 10;
+}
+
+input#placeholderinput1 {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	left: 750px;
+	top: 222px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+input#placeholderinput2 {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	left: 750px;
+	top: 339px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+input#submit{
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 151px;
+	height: 41px;
+	left: 875px;
+	top: 461px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+#login_part2 p.senha {
+	position: absolute;
+	width: 195px;
+	height: 31px;
+	left: 850px;
+	top: 557px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	
+
+	color: #000000;
+}
+
+#login_part2 a.senha {
+	color: #000000;
+	text-decoration-color: currentcolor; 
+	text-decoration-line: underline;
+	text-decoration-style: inherit;
+}
+
+#login_part2 p.cadastro {
+	position: absolute;
+	width: 122px;
+	height: 32px;
+	left: 889px;
+	top: 618px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	color: #000000;
+
+}
+
+#login_part2 a.cadastro {
+	color: #000000;
+	text-decoration-color: currentcolor; 
+	text-decoration-line: underline;
+	text-decoration-style: inherit;
+}

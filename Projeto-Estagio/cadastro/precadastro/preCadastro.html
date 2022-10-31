@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pre-Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="./preCadastro.css">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+	<div id="container">
+		<h3>Como você gostaria de se cadastar?</h3>
+		<h4>Cadastrar como:</h4>
+
+		<input type="button" value="Pessoa Física" id="buttonPF" onclick="redirecionarPF()">
+		<input type="button" value="Pessoa Jurídica" id="buttonPJ" onclick="redirecionarPJ()">
+
+		<a href="../../index.html">Voltar</a>
+	</div>
+
+	<script type="text/javascript">
+		function redirecionarPF(){
+			window.location.href = "../cadastroPF/cadastroPF.html";
+		}
+		function redirecionarPJ(){
+			window.location.href = "../cadastroPJ/cadastroPJ.html";
+		}
+	</script>
+</body>
+</html>

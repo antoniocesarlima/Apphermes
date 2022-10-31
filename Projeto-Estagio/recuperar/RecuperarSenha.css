@@ -1,0 +1,120 @@
+body {
+	position: relative;
+	width: 1349px;
+	height: 708px;
+
+	background: linear-gradient(180deg, #F0ECEC 63.02%, #2C365E 100%);
+}
+
+h1 {
+	position: absolute;
+	width: 644px;
+	height: 77px;
+	left: 356px;
+	top: 21px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	color: #000000;
+}
+
+hr#line {
+	position: absolute;
+	width: 721.18px;
+	height: 10px;
+	left: 317px;
+	top: 122px;
+
+	border-radius: 30px;
+	margin-top: 24px;
+	background: #614949;
+}
+
+input#emailRecuperar {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 785px;
+	height: 80px;
+	left: 282px;
+	top: 249px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	text-align: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+
+input#submitRecuperar {
+	position: absolute;
+	width: 745px;
+	height: 80px;
+	left: 305px;
+	top: 391px;
+
+	background: #000000;
+	border-radius: 15px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	color: #FFFFFF;
+}
+
+p.voltar {
+	position: absolute;
+	width: 311px;
+	height: 24px;
+	left: 522px;
+	top: 553px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	color: #000000;
+}
+
+a.voltar {
+	margin: 5px;
+	color: #000000;
+	text-decoration-color: currentcolor; 
+	text-decoration-line: underline;
+	text-decoration-style: inherit;
+}

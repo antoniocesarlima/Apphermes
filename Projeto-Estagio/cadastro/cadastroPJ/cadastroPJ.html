@@ -6,8 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastroPJ.css">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
-    
+    <h1>Cadastro de Pessoa Jurídica</h1>
+
+    <form>
+	    <select>
+	    	<option value="">Selecione o perfil</option>
+	    	<option value="origem">Origem</option>
+	    	<option value="concedente">Instituição Concedente</option>
+	    	<option value="empresa">Empresa</option>
+	    </select>
+
+	    <P class="nomeF">Nome Fantasia</P>
+	    <input type="text" class="nomeF">
+	    <P class="cidade">Cidade</P>
+	    <input type="text" class="cidade">
+	    <P class="cnpj">CNPJ</P>
+	    <input type="number" class="cnpj">
+	    <P class="endereco">Endereço</P>
+	    <input type="text" class="endereco">
+	    <P class="tContato">Telefone Contato</P>
+	    <input type="number" class="tContato">
+	    <P class="uf">UF</P>
+	    <input type="text" class="uf">
+	    <P class="razaoSocial">Razão social</P>
+	    <input type="text" class="razaoSocial">
+	    <P class="cep">CEP</P>
+	    <input type="number" class="cep">
+
+	    <h4 class="convenios">Responsável Convênios</h4>
+	    <hr class="convenios">
+
+	    <p class="nomeRC">Nome Completo</p>
+	    <input type="text" class="nomeRC">
+	    <p class="contatoC">Contato</p>
+	    <input type="number" class="contatoC">
+	    <p class="emailC">E-mail</p>
+	    <input type="email" class="emailC">
+
+	    <h4 class="financeiro">Responsável Financeiro</h4>
+	    <hr class="financeiro">
+
+	    <p class="nomeRF">Nome Completo</p>
+	    <input type="text" class="nomeRF">
+	    <p class="contatoF">Contato</p>
+	    <input type="number" class="contatoF">
+	    <p class="emailF">E-mail</p>
+	    <input type="email" class="emailF">
+
+	    <h4 class="juridico">Responsável Jurídico</h4>
+	    <hr class="juridico">
+
+	    <p class="nomeRJ">Nome Completo</p>
+	    <input type="text" class="nomeRJ">
+	    <p class="contatoJ">Contato</p>
+	    <input type="number" class="contatoJ">
+	    <p class="emailJ">E-mail</p>
+	    <input type="email" class="emailJ">
+
+	    <p class="senha">Defina uma senha de login</p>
+	    <input type="password" class="senha">
+
+	    <p class="span"><span>Todos os campos devem ser preenchidos (obrigatoriamente)</span></p>
+
+	    <input type="submit" value="Enviar" class="envio">
+    </form>
 </body>
 </html>

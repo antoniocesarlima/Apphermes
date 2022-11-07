@@ -38,6 +38,11 @@ hr#line {
 	background: #614949;
 }
 
+input:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
 input#emailRecuperar {
 	box-sizing: border-box;
 

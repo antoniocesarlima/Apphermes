@@ -56,6 +56,11 @@ div#login_part1 {
 	color: #FFDADA;
 }
 
+#login_part2 input:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
 #login_part2 h1 {
 	position: absolute;
 	width: 330px;

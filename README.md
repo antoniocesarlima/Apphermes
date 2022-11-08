@@ -1,2 +1,4 @@
 # Apphermes
-Projeto do estágio na Meteora
+Projeto do estágio
+
+Esboço para a concretização futura...

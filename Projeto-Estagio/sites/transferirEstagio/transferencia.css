@@ -29,6 +29,10 @@ ul.elements li {
 	list-style: none;
 }
 
+a {
+	color: #000000;
+}
+
 h1 {
 	box-sizing: border-box;
 
@@ -61,6 +65,17 @@ input {
 	border-radius: 20px;
 	text-align: center;
 }
+
+input:hover{
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
+input.button:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
 
 p.subtitle {
 	position: absolute;

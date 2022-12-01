@@ -11,8 +11,8 @@
 	<header>
 		<nav>
 			<ul class="elements">
-				<li>home</li>
-				<li>Log out</li>
+				<li><a href="../home.html">home</a></li>
+				<li><a href="../../index.html">Log out</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -26,9 +26,13 @@
 		<p class="concedente">Concedente</p>
 		<input type="text" class="concedenteIn">
 
-		<input type="submit" value="Encerrar" class="button">
+		<input type="submit" value="Encerrar" class="button" onclick="verificar()">
 		<!-- colocar um alerta ao clicar no botão -->
 	</form>
-	
+	<script type="text/javascript">
+		function verificar() {
+			window.location.href = "./confirmacao.html";
+		}
+	</script>
 </body>
 </html>

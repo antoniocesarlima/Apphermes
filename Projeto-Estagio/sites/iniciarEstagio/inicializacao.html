@@ -11,8 +11,8 @@
 	<header>
 		<nav>
 			<ul class="elements">
-				<li>home</li>
-				<li>Log out</li>
+				<li><a href="../home.html">home</a></li>
+				<li><a href="../../index.html">Log out</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,7 +28,12 @@
 		<input type="email" class="emailIn">
 		<p class="cpf">CPF</p>
 		<input type="number" class="cpfIn">
-		<input type="submit" value="Encerrar" class="button">
+		<input type="submit" value="Encerrar" class="button" onclick="verificar()">
 	</form>
+	<script type="text/javascript">
+		function verificar() {
+			window.location.href = "./verificacao.html";
+		}
+	</script>
 </body>
 </html>

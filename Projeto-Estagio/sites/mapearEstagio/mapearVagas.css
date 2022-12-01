@@ -29,6 +29,10 @@ ul.elements li {
 	list-style: none;
 }
 
+a {
+	color: #000000;
+}
+
 h1 {
 	box-sizing: border-box;
 	position: absolute;
@@ -72,6 +76,16 @@ select {
 	border-radius: 20px;
 	text-align: center;
 	font-size: 18px;
+}
+
+select:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
+input.button:hover{
+	background-color: #C6C6C6;
+	cursor: pointer;
 }
 
 input.button {

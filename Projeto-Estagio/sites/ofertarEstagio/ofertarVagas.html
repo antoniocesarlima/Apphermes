@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ofertar</title>
+	<link rel="stylesheet" href="./ofertarVagas.css">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="elements">
+				<li>home</li>
+				<li>Log out</li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1>Dados da Vaga</h1>
+
+	<article>
+		<form>
+			<p class="setor">Setor</p>
+			<input type="text" class="setorIn">
+
+			<p class="unidade">Unidade</p>
+			<input type="text" class="unidadeIn">
+
+			<p class="horarios">Horários</p>
+			<input type="text" class="horariosIn">
+
+			<p class="requisitos">Pré-requisitos</p>
+			<input type="text" class="requisitosIn">
+
+			<select class="tipo">
+				<option>Tipo de estágio</option>
+				<option value="normal">Normal</option>
+				<option value="obrigatorio">Obrigatorio</option>
+				<option value="nObrigatorio">Não Obrigatorio</option>
+				<option value="internato">Internato</option>
+				<option value="nInternato">Não Internato</option>
+				<option value="residencia">Residência</option>
+				<option value="especializacao">Especialização</option>
+			</select>
+
+			<select class="nivel">
+				<option>Tipo de nível</option>
+				<option value="graduacao">Graduação</option>
+				<option value="pGraduacao">Pós-graduação</option>
+				<option value="tecnico">Técnico</option>
+				<option value="curso">Curso</option>
+			</select>
+
+			<p class="instituicao">Instituição</p>
+			<input type="text" class="instituicaoIn">
+
+			<p class="disciplina">Disciplina</p>
+			<input type="text" class="disciplinaIn">
+
+			<input type="submit" value="Ofertar" class="button">
+		</form>
+	</article>
+</body>
+</html>

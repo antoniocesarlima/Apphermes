@@ -1,0 +1,145 @@
+body {
+	font-family: 'Inter';
+	position: relative;
+	width: 1349px;
+	height: 768px;
+	margin: 0;
+	padding: 0;
+
+	background: #FFFFFF;
+}
+
+header {
+	position: absolute;
+	width: 1349px;
+	height: 55px;
+	left: 0px;
+	top: 0px;
+
+	background: #2C365E;
+}
+
+ul.elements {
+	display: flex;
+	justify-content: flex-end;
+}
+
+ul.elements li {
+	margin-right: 10px;
+	list-style: none;
+}
+
+h1 {
+	box-sizing: border-box;
+
+	position: absolute;
+	width: 550px;
+	height: 58px;
+	left: 405px;
+	top: 98px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+}
+
+input {
+	background: #D9D9D9;
+	border-radius: 20px;
+	text-align: center;
+}
+
+p.subtitle {
+	position: absolute;
+	width: 631px;
+	height: 24px;
+	left: 359px;
+	top: 205px;
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+p.nome {
+	position: absolute;
+	width: 154px;
+	height: 24px;
+	left: 598px;
+	top: 308px;
+	color: #000000;
+}
+
+input.nomeIn {
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	left: 475px;
+	top: 352px;
+}
+
+p.cpf {
+	position: absolute;
+	width: 39px;
+	height: 24px;
+	left: 661px;
+	top: 422px;
+	color: #000000;
+}
+
+input.cpfIn {
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	left: 475px;
+	top: 466px;
+}
+
+p.newConcedente {
+	position: absolute;
+	width: 170px;
+	height: 24px;
+	left: 592px;
+	top: 532px;
+	color: #000000;
+}
+
+input.newConcedenteIn {
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	left: 475px;
+	top: 576px;
+}
+
+input.button {
+	position: absolute;
+	width: 162px;
+	height: 45px;
+	left: 593px;
+	top: 671px;
+
+	background: #D9D9D9;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	font-size: 20px;
+}

@@ -45,7 +45,7 @@ select {
 	font-size: 20px;
 }
 
-p {
+label, p {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
@@ -59,10 +59,22 @@ p {
 
 input {
 	background: #D9D9D9;
+	position: absolute;
+	width: 400px;
+	height: 40px;
 	border-radius: 20px;
+	left: 0;
+	top: 24px;
+	font-weight: 700;
+	font-size: 0.8em;
 }
 
-p.nomeF {
+.inputModified {
+	width: 320px;
+	height: 40px;
+}
+
+label.nomeF {
 	position: absolute;
 	width: 142px;
 	height: 24px;
@@ -70,16 +82,7 @@ p.nomeF {
 	top: 239px;
 }
 
-input.nomeF {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 241px;
-	top: 272px;
-	margin-top: 8px;
-}
-
-p.cidade {
+label.cidade {
 	position: absolute;
 	width: 68px;
 	height: 24px;
@@ -87,16 +90,7 @@ p.cidade {
 	top: 239px;
 }
 
-input.cidade {
-	position: absolute;
-	width: 400px;
-	height: 42px;
-	left: 708px;
-	top: 272px;
-	margin-top: 8px;
-}
-
-p.cnpj {
+label.cnpj {
 	position: absolute;
 	width: 52px;
 	height: 24px;
@@ -104,16 +98,7 @@ p.cnpj {
 	top: 350px;
 }
 
-input.cnpj {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 240px;
-	top: 379px;
-	margin-top: 12px;
-}
-
-p.endereco {
+label.endereco {
 	position: absolute;
 	width: 90px;
 	height: 24px;
@@ -121,16 +106,7 @@ p.endereco {
 	top: 350px;
 }
 
-input.endereco {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 708px;
-	top: 379px;
-    margin-top: 12px;
-}
-
-p.tContato {
+label.tContato {
 	position: absolute;
 	width: 163px;
 	height: 24px;
@@ -138,16 +114,7 @@ p.tContato {
 	top: 462px;
 }
 
-input.tContato {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 240px;
-	top: 486px;
-	margin-top: 16px;
-}
-
-p.uf {
+label.uf {
 	position: absolute;
 	width: 27px;
 	height: 24px;
@@ -155,16 +122,7 @@ p.uf {
 	top: 461px;
 }
 
-input.uf {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 708px;
-	top: 486px;
-	margin-top: 16px;
-}
-
-p.razaoSocial {
+label.razaoSocial {
 	position: absolute;
 	width: 119px;
 	height: 24px;
@@ -172,30 +130,12 @@ p.razaoSocial {
 	top: 562px;
 }
 
-input.razaoSocial {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 240px;
-	top: 593px;
-	margin-top: 10px;
-}
-
-p.cep {
+label.cep {
 	position: absolute;
 	width: 40px;
 	height: 24px;
 	left: 708px;
 	top: 562px;
-}
-
-input.cep {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 708px;
-	top: 593px;
-    margin-top: 10px;
 }
 
 h4.convenios {
@@ -218,7 +158,7 @@ hr.convenios {
 	margin-top: 14px;
 }
 
-p.nomeRC {
+label.nomeRC {
 	position: absolute;
 	width: 154px;
 	height: 24px;
@@ -226,16 +166,7 @@ p.nomeRC {
 	top: 760px;
 }
 
-input.nomeRC {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 178px;
-	top: 792px;
-    margin-top: 12px;
-}
-
-p.contatoC {
+label.contatoC {
 	position: absolute;
 	width: 76px;
 	height: 24px;
@@ -243,30 +174,12 @@ p.contatoC {
 	top: 760px;
 }
 
-input.contatoC {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 526px;
-	top: 792px;
-    margin-top: 12px;
-}
-
-p.emailC {
+label.emailC {
 	position: absolute;
 	width: 60px;
 	height: 24px;
 	left: 870px;
 	top: 760px;
-}
-
-input.emailC {
-	position: absolute;
-	width: 300px;
-	height: 40px;
-	left: 870px;
-	top: 792px;
-    margin-top: 12px;
 }
 
 h4.financeiro {
@@ -287,7 +200,7 @@ hr.financeiro {
 	border: 1px solid #000000;
 }
 
-p.nomeRF {
+label.nomeRF {
 	position: absolute;
 	width: 154px;
 	height: 24px;
@@ -295,16 +208,7 @@ p.nomeRF {
 	top: 957px;
 }
 
-input.nomeRF {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 178px;
-	top: 991px;
-	margin-top: 10px;
-}
-
-p.contatoF {
+label.contatoF {
 	position: absolute;
 	width: 76px;
 	height: 24px;
@@ -312,30 +216,12 @@ p.contatoF {
 	top: 957px;
 }
 
-input.contatoF {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 526px;
-	top: 991px;
-	margin-top: 10px;
-}
-
-p.emailF {
+label.emailF {
 	position: absolute;
 	width: 60px;
 	height: 24px;
 	left: 870px;
 	top: 957px;
-}
-
-input.emailF {
-	position: absolute;
-	width: 300px;
-	height: 40px;
-	left: 870px;
-	top: 991px;
-	margin-top: 10px;
 }
 
 h4.juridico {
@@ -356,7 +242,7 @@ hr.juridico {
 	border: 1px solid #000000;
 }
 
-p.nomeRJ {
+label.nomeRJ {
 	position: absolute;
 	width: 154px;
 	height: 24px;
@@ -364,16 +250,7 @@ p.nomeRJ {
 	top: 1154px;
 }
 
-input.nomeRJ {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 178px;
-	top: 1178px;
-	margin-top: 20px;
-}
-
-p.contatoJ {
+label.contatoJ {
 	position: absolute;
 	width: 76px;
 	height: 24px;
@@ -381,16 +258,7 @@ p.contatoJ {
 	top: 1154px;
 }
 
-input.contatoJ {
-	position: absolute;
-	width: 330px;
-	height: 40px;
-	left: 526px;
-	top: 1178px;
-	margin-top: 20px;
-}
-
-p.emailJ {
+label.emailJ {
 	position: absolute;
 	width: 60px;
 	height: 24px;
@@ -398,19 +266,10 @@ p.emailJ {
 	top: 1154px;
 }
 
-input.emailJ {
-	position: absolute;
-	width: 300px;
-	height: 40px;
-	left: 870px;
-	top: 1178px;
-	margin-top: 20px;
-}
-
-p.senha {
+label.senha {
 	position: absolute;
 	width: 260px;
-	height: 24px;
+	height: 74px;
 	left: 533px;
 	top: 1274px;
 	font-style: normal;
@@ -418,20 +277,14 @@ p.senha {
 	font-size: 20px;
 	line-height: 24px;
 	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+	flex-direction: column;
+	
 
 	color: #000000;
 }
 
 input.senha {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 464px;
-	top: 1295px;
-	margin-top: 26px;
+	position: static;
 }
 
 p.span {
@@ -439,7 +292,7 @@ p.span {
 	width: 618px;
 	height: 22px;
 	left: 360px;
-	top: 1387px;
+	top: 1377px;
 	justify-content: center;
 }
 

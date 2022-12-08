@@ -10,12 +10,20 @@
 <body>
 	<h1>Verificação de conta</h1>
 	<hr id="line">
-
-	<input type="email" placeholder="Endereço de e-mail" id="emailRecuperar">
-	<input type="submit" value="Continuar" id="submitRecuperar">
-
+	<form id="form-recuperar">
+		<input type="email" placeholder="Endereço de e-mail" id="emailRecuperar" />
+		<input type="button" value="Continuar" id="submitRecuperar" onclick="verificar()"/>
+	</form>
 	<p class="voltar">
 		Lembrou sua senha? <a href="../index.html" class="voltar"> Fazer login</a>
 	</p>
+	<script>
+		function verificar() {
+			let form = document.getElementById("form-recuperar");
+			document.getElementById("submitRecuperar").addEventListener("click", function () {
+				form.submit();
+			});
+		}
+	</script>
 </body>
 </html>

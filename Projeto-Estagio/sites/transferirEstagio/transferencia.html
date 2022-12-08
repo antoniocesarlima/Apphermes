@@ -18,15 +18,29 @@
 	</header>
 	<h1>Dados de transferência</h1>
 	<p class="subtitle">Todos os campos devem ser preencidos com dados do estagiário</p>
-	<form>
-		<p class="nome">Nome Completo</p>
-		<input type="text" class="nomeIn">
-		<p class="cpf">CPF</p>
-		<input type="number" class="cpfIn">
-		<p class="newConcedente">Nova Concedente</p>
-		<input type="text" class="newConcedenteIn">
-
-		<input type="submit" value="Transferir" class="button">
+	<form id="form-transferir">
+		<label class="nome">Nome Completo
+			<input type="text" class="nomeIn">
+		</label>
+		
+		<label class="cpf">CPF
+			<input type="number" class="cpfIn">
+		</label>
+		
+		<label class="newConcedente">Nova Concedente
+			<input type="text" class="newConcedenteIn">
+		</label>
+		
+		<input type="button" value="Transferir" class="button" id="submit" onclick="verificar()">
 	</form>
+	<script>
+		function verificar() {
+			let form = document.getElementById("form-transferir");
+			document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
+			alert("Transferência realizada com sucesso");
+		}
+	</script>
 </body>
 </html>

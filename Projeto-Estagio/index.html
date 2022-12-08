@@ -14,13 +14,15 @@
 	</div>
 	<div id="login_part2">
 		<h1>Goliasapp</h1>
-		<img src="./imagens/user.svg" alt="icone" id="user">
-		<input type="text" placeholder="CPF ou CNPJ" id="placeholderinput1" maxlength="14">
+		<form id="form-index">
+			<img src="./imagens/user.svg" alt="icone" id="user">
+			<input type="text" placeholder="CPF ou CNPJ" id="placeholderinput1" maxlength="14">
 
-		<img src="./imagens/key.svg" alt="icone" id="key">
-		<input type="password" placeholder="Senha" id="placeholderinput2">
-		
-		<input type="submit" value="Enviar" id="submit" onclick="verificar()">
+			<img src="./imagens/key.svg" alt="icone" id="key">
+			<input type="password" placeholder="Senha" id="placeholderinput2">
+			
+			<input type="button" value="Enviar" id="submit" onclick="verificar()">
+		</form>
 
 		<p class="senha">
 			<a href="./recuperar/RecuperarSenha.html" class="senha">Esqueci minha senha</a>
@@ -32,6 +34,10 @@
 	</div>
 	<script type="text/javascript">
 		function verificar() {
+			let form = document.getElementById("form-index");
+			document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
 			window.location.href = "./sites/home.html";
 		}
 	</script>

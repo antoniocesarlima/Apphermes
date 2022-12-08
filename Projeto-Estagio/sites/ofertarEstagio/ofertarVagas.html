@@ -21,18 +21,22 @@
 
 	<article>
 		<form>
-			<p class="setor">Setor</p>
-			<input type="text" class="setorIn">
+			<label class="setor">Setor
+				<input type="text" class="setorIn">
+			</label>
+			
+			<label class="unidade">Unidade
+				<input type="text" class="unidadeIn">
+			</label>
 
-			<p class="unidade">Unidade</p>
-			<input type="text" class="unidadeIn">
-
-			<p class="horarios">Horários</p>
-			<input type="text" class="horariosIn">
-
-			<p class="requisitos">Pré-requisitos</p>
-			<input type="text" class="requisitosIn">
-
+			<label class="horarios">Horários
+				<textarea class="inputModified" cols="0" rows="10"></textarea>
+			</label>
+			
+			<label class="requisitos">Pré-requisitos
+				<textarea class="inputModified" cols="0" rows="10"></textarea>
+			</label>
+			
 			<select class="tipo">
 				<option>Tipo de estágio</option>
 				<option value="normal">Normal</option>
@@ -52,14 +56,22 @@
 				<option value="curso">Curso</option>
 			</select>
 
-			<p class="instituicao">Instituição</p>
-			<input type="text" class="instituicaoIn">
-
-			<p class="disciplina">Disciplina</p>
-			<input type="text" class="disciplinaIn">
-
-			<input type="submit" value="Ofertar" class="button">
+			<label class="instituicao">Instituição
+				<input type="text" class="instituicaoIn">
+			</label>
+			
+			<label class="disciplina">Disciplina
+				<input type="text" class="disciplinaIn">
+			</label>
+			
+			<input type="button" value="Ofertar" id="submit" class="button" onclick="verificar()">
 		</form>
 	</article>
+	<script>
+		function verificar() {
+			
+		}
+		
+	</script>
 </body>
 </html>

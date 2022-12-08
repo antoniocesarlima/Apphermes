@@ -19,19 +19,24 @@
 
 	<h1>Dados do estagiário</h1>
 	<p class="subtitle">Todos os campos devem ser preencidos com dados do estagiário</p>
-	<form>
+	<form id="form-iniciar">
 		<p class="nome">Nome Completo</p>
 		<input type="text" class="nomeIn">
 		<p class="rg">RG</p>
 		<input type="number" class="rgIn">
 		<p class="email">E-mail</p>
 		<input type="email" class="emailIn">
-		<p class="cpf">CPF</p>
+		<p class="cpf">CPF</p>">
 		<input type="number" class="cpfIn">
-		<input type="submit" value="Encerrar" class="button" onclick="verificar()">
+
+		<input type="button" value="Iniciar" id="submit" class="button" onclick="verificar()">
 	</form>
 	<script type="text/javascript">
 		function verificar() {
+			let form = document.getElementById("form-iniciar");
+			document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
 			window.location.href = "./verificacao.html";
 		}
 	</script>

@@ -60,19 +60,23 @@ article {
 	border-radius: 20px;
 }
 
-p {
-	
+label {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	color: #000000;
 }
 
-input {
+input, textarea {
+	width: 350px;
+	height: 40px;
+	left: 0px;
+	top: 24px;
 	box-sizing: border-box;
 	background: #FCEFEF;
 	border: 1px solid #000000;
@@ -80,9 +84,14 @@ input {
 	border-radius: 20px;
 }
 
-input:hover{
+input:hover, .inputModified:hover{
 	background-color: #C6C6C6;
 	cursor: pointer;
+}
+
+.inputModified {
+	width: 350px;
+	height: 80px;
 }
 
 select {
@@ -99,100 +108,52 @@ select:hover {
 	cursor: pointer;
 }
 
-p.setor {
+label.setor {
 	position: absolute;
 	width: 51px;
-	height: 24px;
+	height: 64px;
 	left: 206px;
 	top: 63px;
 }
 
-input.setorIn {
-	position: absolute;
-	width: 350px;
-	height: 40px;
-	left: 65px;
-	top: 108px;
-}
-
-p.unidade {
+label.unidade {
 	position: absolute;
 	width: 80px;
-	height: 24px;
+	height: 64px;
 	left: 680px;
 	top: 63px;
 }
 
-input.unidadeIn {
-	position: absolute;
-	width: 350px;
-	height: 40px;
-	left: 545px;
-	top: 108px;
-}
-
-p.horarios {
+label.horarios {
 	position: absolute;
 	width: 81px;
-	height: 24px;
+	height: 110px;
 	left: 191px;
 	top: 191px;
 }
 
-input.horariosIn {
-	position: absolute;
-	width: 350px;
-	height: 90px;
-	left: 65px;
-	top: 235px;
-}
-
-p.requisitos {
+label.requisitos {
 	position: absolute;
 	width: 133px;
-	height: 24px;
+	height: 110px;
 	left: 654px;
 	top: 191px;
 }
 
-input.requisitosIn {
-	position: absolute;
-	width: 350px;
-	height: 90px;
-	left: 545px;
-	top: 235px;
-}
-
-p.instituicao {
+label.instituicao {
 	position: absolute;
 	width: 98px;
-	height: 24px;
+	height: 64px;
 	left: 434px;
 	top: 485px;
 }
 
-input.instituicaoIn {
-	position: absolute;
-	width: 420px;
-	height: 40px;
-	left: 273px;
-	top: 531px;
-}
-
-p.disciplina {
+label.disciplina {
 	position: absolute;
 	width: 91px;
-	height: 24px;
+	height: 64px;
 	left: 437px;
 	top: 615px;
-}
-
-input.disciplinaIn {
-	position: absolute;
-	width: 418px;
-	height: 40px;
-	left: 273px;
-	top: 660px;
 }
 
 input.button {

@@ -11,7 +11,7 @@
 <body>
 	<h1>Cadastro de Pessoa Física</h1>
 
-	<form>
+	<form id="form-cadatroPF">
 		<select name="cadastro" id="perfis">
 			<option value="" selected>Selecione o perfil</option>
 			<option value="Aluno">Aluno</option>
@@ -22,36 +22,62 @@
 			<option value="Profissional">Profissional</option>
 		</select>
 
-		<p class="nome">* Nome Completo</p>
-		<input type="text" class="nome">
-		<p class="cidade">* Cidade</p>
-		<input type="text" class="cidade">
-		<p class="cpf">* CPF</p>
-		<input type="number" class="cpf">
-		<p class="endereco">* Endereço</p>
-		<input type="text" class="endereco">
-		<p class="rg">* RG</p>
-		<input type="number" class="rg">
-		<p class="uf">* UF</p>
-		<input type="text" class="uf">
-		<p class="email">* E-mail</p>
-		<input type="email" class="email">
-		<p class="cep">* CEP</p>
-		<input type="number" class="cep">
-		<p class="tCelular">* Telefone Celular</p>
-		<input type="number" class="tCelular">
-		<p class="tFixo">Telefone Fixo</p>
-		<input type="number" class="tFixo">
-		<p class="linkedin">Linkedin</p>
-		<input type="text" class="linkedin">
-		<p class="curriculo">Currículo Lattes</p>
-		<input type="text" class="curriculo">
-		<p class="senha">* Defina uma senha de login</p>
-		<input type="password" class="senha">
+
+		<label class="nome">* Nome Completo
+			<input type="text" class="nome">
+		</label>
+
+		<label class="cidade">* Cidade
+			<input type="text" class="cidade">
+		</label>
+
+		<label class="cpf">* CPF
+			<input type="number" class="cpf">
+		</label>
+
+		<label class="endereco">* Endereço
+			<input type="text" class="endereco">
+		</label>
+
+		<label class="rg">* RG
+			<input type="number" class="rg">
+		</label>
+
+		<label class="uf">* UF
+			<input type="text" class="uf">
+		</label>
+
+		<label class="email">* E-mail
+			<input type="email" class="email">
+		</label>
+
+		<label class="cep">* CEP
+			<input type="number" class="cep">
+		</label>
+
+		<label class="tCelular">* Telefone Celular
+			<input type="number" class="tCelular">
+		</label>
+
+		<label class="tFixo">Telefone Fixo
+			<input type="number" class="tFixo">
+		</label>
+
+		<label class="linkedin">Linkedin
+			<input type="text" class="linkedin">
+		</label>
+		
+		<label class="curriculo">Currículo Lattes
+			<input type="text" class="curriculo">
+		</label>
+		
+		<label class="senha">* Defina uma senha de login
+			<input type="password" class="senha">
+		</label>
 
 		<p class="obs"><span>Todos os campos com * devem ser preenchidos</span></p>
 
-		<input type="submit" value="Enviar" class="envio" onclick="verificar()">
+		<input type="submit" value="Enviar" id="submit" class="envio" onclick="verificar()">
 
 	</form>
 
@@ -72,7 +98,15 @@
 			if(document.querySelector("input.cep").value === "") camposNulos++;
 			if(document.querySelector("input.tCelular").value === "") camposNulos++;
 			if(document.querySelector("input.senha").value === "") camposNulos++;
-			if(camposNulos > 0) alert("Preencha todos os campos vazios");
+			if(camposNulos > 0) {
+				alert("Preencha todos os campos vazios");
+			} else {
+				let form = document.getElementById("form-cadatroPF");
+				document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
+			}
+			
 		}
 	</script>
 </body>

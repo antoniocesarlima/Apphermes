@@ -8,7 +8,7 @@ body {
 
 h1 {
 	position: absolute;
-	width: 540px;
+	width: 560px;
 	height: 58px;
 	left: 404px;
 	top: 54px;
@@ -17,7 +17,7 @@ h1 {
 	border-radius: 20px;
 
 	position: absolute;
-	width: 500px;
+	width: 540px;
 	height: 48px;
 	left: 424px;
 	top: 55px;
@@ -57,387 +57,228 @@ select {
 	color: #000000;
 }
 
-input {
-	font-size: 16px;
-}
-
-p.nome {
-	position: absolute;
-	width: 175px;
-	height: 24px;
-	left: 239px;
-	top: 312px;
-
+label {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
 	display: flex;
 	align-items: center;
-
 	color: #000000;
+}
+
+input {
+	font-size: 16px;
+	background: #D9D9D9;
+	border-radius: 20px;
+}
+
+label.nome {
+	position: absolute;
+	width: 175px;
+	height: 24px;
+	left: 239px;
+	top: 312px;
 }
 
 input.nome {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 241px;
-	top: 345px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 12px;
+	left: 0;
+	top: 24px;
 }
 
-p.cidade {
+label.cidade {
 	position: absolute;
 	width: 83px;
 	height: 24px;
 	left: 706px;
 	top: 312px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.cidade {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 706px;
-	top: 345px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 12px;
+	left: 0;
+	top: 24px;
 }
 
-p.cpf {
+label.cpf {
 	position: absolute;
 	width: 55px;
 	height: 24px;
 	left: 241px;
 	top: 423px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.cpf {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 241px;
-	top: 439px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 26px;
+	left: 0;
+	top: 24px;
 }
 
-p.endereco {
+label.endereco {
 	position: absolute;
 	width: 106px;
 	height: 24px;
 	left: 707px;
 	top: 423px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.endereco {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 707px;
-	top: 439px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 26px;
+	left: 0;
+	top: 24px;
 }
 
-p.rg {
+label.rg {
 	position: absolute;
 	width: 44px;
 	height: 24px;
 	left: 241px;
 	top: 517px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.rg {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 241px;
-	top: 541px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 18px;
+	left: 0;
+	top: 24px;
 }
 
-p.uf {
+label.uf {
 	position: absolute;
 	width: 43px;
 	height: 24px;
 	left: 708px;
 	top: 517px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.uf {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 708px;
-	top: 542px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 18px;
+	left: 0;
+	top: 24px;
 }
 
-p.email {
+label.email {
 	position: absolute;
 	width: 75px;
 	height: 24px;
 	left: 242px;
 	top: 630px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.email {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 242px;
-	top: 648px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 26px;
+	left: 0;
+	top: 24px;
 }
 
-p.cep {
+label.cep {
 	position: absolute;
 	width: 55px;
 	height: 24px;
 	left: 710px;
 	top: 631px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.cep {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 708px;
-	top: 649px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 26px;
+	left: 0;
+	top: 24px;
 }
 
-p.tCelular {
+label.tCelular {
 	position: absolute;
 	width: 169px;
 	height: 24px;
 	left: 242px;
 	top: 741px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.tCelular {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 242px;
-	top: 755px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 28px;
+	left: 0;
+	top: 24px;
 }
 
-p.tFixo {
+label.tFixo {
 	position: absolute;
 	width: 126px;
 	height: 24px;
 	left: 710px;
 	top: 742px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.tFixo {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 710px;
-	top: 756px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 28px;
+	left: 0;
+	top: 24px;
 }
 
-p.linkedin {
+label.linkedin {
 	position: absolute;
 	width: 79px;
 	height: 24px;
 	left: 241px;
 	top: 852px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.linkedin {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 241px;
-	top: 862px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 32px;
+	left: 0;
+	top: 24px;
 }
 
-p.curriculo {
+label.curriculo {
 	position: absolute;
 	width: 150px;
 	height: 24px;
 	left: 708px;
 	top: 853px;
-
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-
-	color: #000000;
 }
 
 input.curriculo {
 	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 708px;
-	top: 863px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 32px;
+	left: 0;
+	top: 24px;
 }
 
-p.senha {
+label.senha {
 	position: absolute;
 	width: 280px;
-	height: 24px;
+	height: 74px;
 	left: 544px;
 	top: 954px;
-
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 20px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-
-	color: #000000;
+	flex-direction: column;
 }
 
 input.senha {
-	position: absolute;
 	width: 400px;
 	height: 40px;
-	left: 475px;
-	top: 978px;
-
-	background: #D9D9D9;
-	border-radius: 20px;
-	margin-top: 22px;
+	left: 0;
+	top: 24px;
 	text-align: center;
 }
 
@@ -446,19 +287,15 @@ p.obs {
 	width: 410px;
 	height: 22px;
 	left: 469px;
-	top: 1085px;
-
+	top: 1075px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
-	/* identical to box height */
-
 	display: flex;
 	align-items: center;
 	text-align: center;
 	margin-top: 0;
-
 	color: #000000;
 }
 

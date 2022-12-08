@@ -51,7 +51,7 @@ h1 {
 	text-align: center;
 }
 
-p {
+p, label {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -60,10 +60,23 @@ p {
 	align-items: center;
 }
 
+label {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 170px;
+	height: 64px;
+	color: #000000;
+}
+
 input {
 	background: #D9D9D9;
 	border-radius: 20px;
 	text-align: center;
+	width: 400px;
+	height: 40px;
+	left: 0px;
+	top: 24px;
 }
 
 input:hover{
@@ -94,55 +107,19 @@ p.subtitle {
 	color: #000000;
 }
 
-p.nome {
-	position: absolute;
-	width: 154px;
-	height: 24px;
+label.nome {
 	left: 598px;
 	top: 308px;
-	color: #000000;
 }
 
-input.nomeIn {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 475px;
-	top: 352px;
+label.cpf {
+	left: 598px;
+	top: 420px;
 }
 
-p.cpf {
-	position: absolute;
-	width: 39px;
-	height: 24px;
-	left: 661px;
-	top: 422px;
-	color: #000000;
-}
-
-input.cpfIn {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 475px;
-	top: 466px;
-}
-
-p.newConcedente {
-	position: absolute;
-	width: 170px;
-	height: 24px;
-	left: 592px;
+label.newConcedente {
+	left: 598px;
 	top: 532px;
-	color: #000000;
-}
-
-input.newConcedenteIn {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 475px;
-	top: 576px;
 }
 
 input.button {

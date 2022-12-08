@@ -18,19 +18,28 @@
 	</header>
 	<h1>Dados do encerramento</h1>
 	<p class="subtitle">Todos os campos devem ser preencidos com dados do estagiário</p>
-	<form>
-		<p class="nome">Nome Completo</p>
-		<input type="text" class="nomeIn">
-		<p class="cpf">CPF</p>
-		<input type="number" class="cpfIn">
-		<p class="concedente">Concedente</p>
-		<input type="text" class="concedenteIn">
+	<form id="form-encerrar">
+		<label class="nome">Nome Completo
+			<input type="text" class="nomeIn">
+		</label>
+		
+		<label class="cpf">CPF
+			<input type="number" class="cpfIn">
+		</label>
+		
+		<label class="concedente">Concedente
+			<input type="text" class="concedenteIn">
+		</label>
 
-		<input type="submit" value="Encerrar" class="button" onclick="verificar()">
+		<input type="button" value="Encerrar" id="submit" class="button" onclick="verificar()">
 		<!-- colocar um alerta ao clicar no botão -->
 	</form>
 	<script type="text/javascript">
 		function verificar() {
+			let form = document.getElementById("form-encerrar");
+			document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
 			window.location.href = "./confirmacao.html";
 		}
 	</script>

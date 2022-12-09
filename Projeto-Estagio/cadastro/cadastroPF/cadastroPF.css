@@ -68,9 +68,19 @@ label {
 }
 
 input {
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	left: 0;
+	top: 24px;
 	font-size: 16px;
 	background: #D9D9D9;
 	border-radius: 20px;
+}
+
+input:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
 }
 
 label.nome {
@@ -81,28 +91,12 @@ label.nome {
 	top: 312px;
 }
 
-input.nome {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.cidade {
 	position: absolute;
 	width: 83px;
 	height: 24px;
 	left: 706px;
 	top: 312px;
-}
-
-input.cidade {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
 }
 
 label.cpf {
@@ -113,28 +107,12 @@ label.cpf {
 	top: 423px;
 }
 
-input.cpf {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.endereco {
 	position: absolute;
 	width: 106px;
 	height: 24px;
 	left: 707px;
 	top: 423px;
-}
-
-input.endereco {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
 }
 
 label.rg {
@@ -145,28 +123,12 @@ label.rg {
 	top: 517px;
 }
 
-input.rg {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.uf {
 	position: absolute;
 	width: 43px;
 	height: 24px;
 	left: 708px;
 	top: 517px;
-}
-
-input.uf {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
 }
 
 label.email {
@@ -177,28 +139,12 @@ label.email {
 	top: 630px;
 }
 
-input.email {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.cep {
 	position: absolute;
 	width: 55px;
 	height: 24px;
 	left: 710px;
 	top: 631px;
-}
-
-input.cep {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
 }
 
 label.tCelular {
@@ -209,28 +155,12 @@ label.tCelular {
 	top: 741px;
 }
 
-input.tCelular {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.tFixo {
 	position: absolute;
 	width: 126px;
 	height: 24px;
 	left: 710px;
 	top: 742px;
-}
-
-input.tFixo {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
 }
 
 label.linkedin {
@@ -241,14 +171,6 @@ label.linkedin {
 	top: 852px;
 }
 
-input.linkedin {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.curriculo {
 	position: absolute;
 	width: 150px;
@@ -257,24 +179,18 @@ label.curriculo {
 	top: 853px;
 }
 
-input.curriculo {
-	position: absolute;
-	width: 400px;
-	height: 40px;
-	left: 0;
-	top: 24px;
-}
-
 label.senha {
 	position: absolute;
 	width: 280px;
 	height: 74px;
 	left: 544px;
 	top: 954px;
+	display: flex;
 	flex-direction: column;
 }
 
 input.senha {
+	position: static;
 	width: 400px;
 	height: 40px;
 	left: 0;

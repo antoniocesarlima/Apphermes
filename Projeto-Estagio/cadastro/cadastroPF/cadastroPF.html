@@ -77,36 +77,19 @@
 
 		<p class="obs"><span>Todos os campos com * devem ser preenchidos</span></p>
 
-		<input type="submit" value="Enviar" id="submit" class="envio" onclick="verificar()">
+		<input type="button" value="Enviar" id="submit" class="envio" onclick="verificar()">
 
 	</form>
 
 	<script>
-
 		// ---!! Salvar dados caso a verficação de erro !!---
-		// ---!! Fazer verificação do select !!---
-
+		// ---!! Fazer verificação de campos !!---
 		function verificar() {
-			let camposNulos = 0;
-			if(document.querySelector("input.nome").value == "") camposNulos++;
-			if(document.querySelector("input.cidade").value === "") camposNulos++;
-			if(document.querySelector("input.cpf").value === "") camposNulos++;
-			if(document.querySelector("input.endereco").value === "") camposNulos++;
-			if(document.querySelector("input.rg").value === "") camposNulos++;
-			if(document.querySelector("input.uf").value === "") camposNulos++;
-			if(document.querySelector("input.email").value === "") camposNulos++;
-			if(document.querySelector("input.cep").value === "") camposNulos++;
-			if(document.querySelector("input.tCelular").value === "") camposNulos++;
-			if(document.querySelector("input.senha").value === "") camposNulos++;
-			if(camposNulos > 0) {
-				alert("Preencha todos os campos vazios");
-			} else {
-				let form = document.getElementById("form-cadatroPF");
+			let form = document.getElementById("form-cadatroPF");
 				document.getElementById("submit").addEventListener("click", function () {
 				form.submit();
 			});
-			}
-			
+			window.location.href = "../../sites/home.html";
 		}
 	</script>
 </body>

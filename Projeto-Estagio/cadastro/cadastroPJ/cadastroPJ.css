@@ -69,6 +69,11 @@ input {
 	font-size: 0.8em;
 }
 
+input:hover {
+	background-color: #C6C6C6;
+	cursor: pointer;
+}
+
 .inputModified {
 	width: 320px;
 	height: 40px;

@@ -11,7 +11,7 @@
 <body>
     <h1>Cadastro de Pessoa Jurídica</h1>
 
-    <form>
+    <form id="form-cadatroPJ">
 	    <select>
 	    	<option value="">Selecione o perfil</option>
 	    	<option value="origem">Origem</option>
@@ -98,14 +98,22 @@
 				<input type="email" class="inputModified">
 			</label>
 	    
-
 	    <label class="senha">Defina uma senha de login
 				<input type="password" class="senha">
 			</label>
 
 	    <p class="span"><span>Todos os campos devem ser preenchidos (obrigatoriamente)</span></p>
 
-	    <input type="submit" value="Enviar" class="envio">
+	    <input type="button" value="Enviar" id="submit" class="envio" onclick="verificar()">
     </form>
+		<script>
+			function verificar() {
+				let form = document.getElementById("form-cadatroPJ");
+				document.getElementById("submit").addEventListener("click", function () {
+				form.submit();
+			});
+			window.location.href = "../../sites/home.html";
+			}
+		</script>
 </body>
 </html>
